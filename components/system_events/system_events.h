@@ -7,7 +7,6 @@
 extern QueueHandle_t rfid_queue;
 extern QueueHandle_t display_queue;
 extern QueueHandle_t service_queue;
-extern QueueHandle_t motion_queue;
 extern QueueHandle_t comm_queue;
 extern QueueHandle_t voice_queue;
 

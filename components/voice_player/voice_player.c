@@ -86,7 +86,7 @@ void voice_player_init(void)
     uart_set_pin(DF_UART_PORT, VOICE_TX_PIN, VOICE_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 
     // Tạo Queue cho Voice
-    voice_queue = xQueueCreate(10, sizeof(voice_event_t));
+    // voice_queue = xQueueCreate(10, sizeof(voice_event_t));
 
     // Khởi động Task
     xTaskCreate(voice_player_task, "voice_task", 3072, NULL, 3, NULL);
