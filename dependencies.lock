@@ -1,0 +1,29 @@
+dependencies:
+  abobija/rc522:
+    component_hash: 041887e58a81f8261aa370bd5f62b54edfe0396e226fb565ae14ce41af0ad891
+    dependencies:
+    - name: idf
+      require: private
+      version: ^5.0
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 3.4.3
+  idf:
+    source:
+      type: idf
+    version: 5.4.2
+  zorxx/lcd1602:
+    component_hash: 7e2b69e5cfcbbe6ace6a22e5884359a0ebefa7b3431f1847c0830f9c0ae6edb0
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.2.0
+direct_dependencies:
+- abobija/rc522
+- idf
+- zorxx/lcd1602
+manifest_hash: f41d281f9d87470bdec0fe71f3a696092490f406b1d110e82038a1c2295342dd
+target: esp32c3
+version: 2.0.0

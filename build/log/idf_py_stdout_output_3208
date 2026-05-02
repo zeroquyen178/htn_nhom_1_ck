@@ -1,0 +1,35 @@
+[1/23] Building C object esp-idf/system_events/CMakeFiles/__idf_system_events.dir/system_events.c.obj
+[2/23] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj
+[3/23] Building C object esp-idf/communication/CMakeFiles/__idf_communication.dir/communication.c.obj
+[4/23] Building C object esp-idf/display_lcd/CMakeFiles/__idf_display_lcd.dir/display_lcd.c.obj
+[5/23] Building C object esp-idf/queue_manager/CMakeFiles/__idf_queue_manager.dir/queue_manager.c.obj
+[6/23] Building C object esp-idf/rfid_reader/CMakeFiles/__idf_rfid_reader.dir/rfid_reader.c.obj
+[7/23] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[8/23] Linking C static library esp-idf\system_events\libsystem_events.a
+[9/23] Linking C static library esp-idf\button\libbutton.a
+[10/23] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/nam_4/htn/smart-queue-system/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[11/23] Linking C static library esp-idf\communication\libcommunication.a
+[12/23] Linking C static library esp-idf\display_lcd\libdisplay_lcd.a
+[13/23] Linking C static library esp-idf\rfid_reader\librfid_reader.a
+[14/23] No install step for 'bootloader'
+[15/23] Completed 'bootloader'
+[16/23] Building C object esp-idf/voice_player/CMakeFiles/__idf_voice_player.dir/voice_player.c.obj
+[17/23] Linking C static library esp-idf\voice_player\libvoice_player.a
+[18/23] Linking C static library esp-idf\queue_manager\libqueue_manager.a
+[19/23] Linking C static library esp-idf\main\libmain.a
+[20/23] Generating ld/sections.ld
+[21/23] Linking CXX executable smart_queue_system.elf
+[22/23] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin
+[23/23] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/nam_4/htn/smart-queue-system/build/partition_table/partition-table.bin D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin"
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size D:/nam_4/htn/smart-queue-system/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/nam_4/htn/smart-queue-system/build/partition_table/partition-table.bin D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin"
+Error: app partition is too small for binary smart_queue_system.bin size 0x102190:
+  - Part 'factory' 0/0 @ 0x10000 size 0x100000 (overflow 0x2190)
+ninja: build stopped: subcommand failed.

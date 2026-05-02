@@ -1,0 +1,25 @@
+[1/17] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/nam_4/htn/smart-queue-system/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/17] No install step for 'bootloader'
+[3/17] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj
+[4/17] Building C object esp-idf/display_lcd/CMakeFiles/__idf_display_lcd.dir/display_lcd.c.obj
+[5/17] Building C object esp-idf/rfid_reader/CMakeFiles/__idf_rfid_reader.dir/rfid_reader.c.obj
+[6/17] Completed 'bootloader'
+[7/17] Linking C static library esp-idf\button\libbutton.a
+[8/17] Linking C static library esp-idf\rfid_reader\librfid_reader.a
+[9/17] Linking C static library esp-idf\display_lcd\libdisplay_lcd.a
+[10/17] Building C object esp-idf/voice_player/CMakeFiles/__idf_voice_player.dir/voice_player.c.obj
+[11/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[12/17] Linking C static library esp-idf\voice_player\libvoice_player.a
+[13/17] Linking C static library esp-idf\main\libmain.a
+[14/17] Generating ld/sections.ld
+[15/17] Linking CXX executable smart_queue_system.elf
+[16/17] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin
+[17/17] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/nam_4/htn/smart-queue-system/build/partition_table/partition-table.bin D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin"
+smart_queue_system.bin binary size 0x1020f0 bytes. Smallest app partition is 0x177000 bytes. 0x74f10 bytes (31%) free.

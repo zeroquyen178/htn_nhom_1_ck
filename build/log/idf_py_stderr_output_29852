@@ -1,0 +1,54 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\nam_4\\htn\\smart-queue-system\\build\\smart_queue_system.elf', '-ex', 'target remote | "D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpwi88a8u5"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmpwi88a8u5': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0m--- 0x40380840: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\nam_4\\htn\\smart-queue-system\\build\\smart_queue_system.elf', '-ex', 'target remote | "D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmph4sr2g9u"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmph4sr2g9u': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0m--- 0x40380840: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\nam_4\\htn\\smart-queue-system\\build\\smart_queue_system.elf', '-ex', 'target remote | "D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp6wjq2eop"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmp6wjq2eop': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0m--- 0x40380840: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\nam_4\\htn\\smart-queue-system\\build\\smart_queue_system.elf', '-ex', 'target remote | "D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpa7od0kdz"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmpa7od0kdz': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0m--- 0x40380840: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\nam_4\\htn\\smart-queue-system\\build\\smart_queue_system.elf', '-ex', 'target remote | "D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpnic9w4df"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'D:\\Espressif\\python_env\\idf5.4_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmpnic9w4df': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0m--- 0x40380840: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380888: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x40387fd6: [0;33m__ubsan_include[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.2/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m

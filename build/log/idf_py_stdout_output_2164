@@ -1,0 +1,221 @@
+ESP-RO�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=22fe8h (143336) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033010 vaddr=3fc97600 size=02f80h ( 12160) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00035f98 vaddr=40380000 size=0a080h ( 41088) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c6ac4h (813764) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=00106aec vaddr=4038a080 size=0d454h ( 54356) load[0m
+[0;32mI (263) esp_image: segment 5: paddr=00113f48 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (271) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (271) boot: Disabling RNG early entropy source...[0m
+[0;32mI (281) cpu_start: Unicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     smart_queue_system[0m
+[0;32mI (294) app_init: App version:      1[0m
+[0;32mI (298) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (303) app_init: ELF file SHA256:  0813a21a0...[0m
+[0;32mI (307) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (311) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (315) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (319) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (322) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (329) heap_init: At 3FC9EFE0 len 00021020 (132 KiB): RAM[0m
+[0;32mI (334) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (340) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (346) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;32mI (358) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (371) main_task: Started on CPU0[0m
+[0;32mI (401) main_task: Calling app_main()[0m
+[0;32mI (401) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (401) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (401) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (411) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (421) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (421) VOICE_PLAYER: Voice Task Started[0m
+[0;32mI (921) RFID: Initializing RC522[0m
+[0;32mI (921) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (921) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (961) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (961) RFID: RC522 scanner started[0m
+[0;32mI (961) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (1021) pp: pp rom version: 9387209[0m
+[0;32mI (1021) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1031) wifi:wifi driver task: 3fcacb88, prio:23, stack:6656, core=0[0m
+[0;32mI (1031) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (1031) wifi:wifi certification version: v7.0[0m
+[0;32mI (1031) wifi:config NVS flash: enabled[0m
+[0;32mI (1031) wifi:config nano formatting: disabled[0m
+[0;32mI (1041) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1041) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1051) wifi:Init management short buffer num: 32[0m
+[0;32mI (1051) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1061) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1061) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1071) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1101) wifi_init: rx ba win: 6[0m
+[0;32mI (1101) wifi_init: accept mbox: 6[0m
+[0;32mI (1101) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1101) wifi_init: udp mbox: 6[0m
+[0;32mI (1101) wifi_init: tcp mbox: 6[0m
+[0;32mI (1101) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1101) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1111) wifi_init: tcp mss: 1440[0m
+[0;32mI (1111) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1111) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1121) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1131) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (1161) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (1171) wifi:enable tsf[0m
+[0;32mI (1171) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1171) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1181) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1181) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1191) wifi:connected with Quyen, aid = 5, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (1191) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (1201) wifi:pm start, type: 1[0m
+
+[0;32mI (1201) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1211) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[1;31mE (1221) rc522: rc522_picc_send(86): [0m
+[0;32mI (1271) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2241) esp_netif_handlers: sta ip: 192.168.1.113, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (2241) WIFI: WiFi Connected[0m
+[0;32mI (2241) COMMUNICATION: Communication Module Initialized[0m
+[0;32mI (2241) QUEUE_MANAGER: Queue Manager Task started with Mutex & Timer Support[0m
+[0;32mI (2271) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (2271) main_task: Returned from app_main()[0m
+[0;32mI (2411) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5331) RFID: RFID card detected[0m
+[0;32mI (5331) rc522: [0m
+[0;32mI (5331) rc522: ╔══════════════╗[0m
+[0;32mI (5331) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (5331) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (5341) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (5341) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (5351) rc522: ╚══════════════╝[0m
+[0;32mI (5351) rc522: [0m
+[0;32mI (5351) QUEUE_MANAGER: [RFID] New Ticket: 1 (Waiting: 1)[0m
+[0;32mI (5361) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (5451) COMMUNICATION: Update Server success: Kiosk_RFID[0m
+[0;32mI (5911) RFID: Card removed[0m
+[0;32mI (6171) RFID: RFID card detected[0m
+[0;32mI (6171) rc522: [0m
+[0;32mI (6171) rc522: ╔══════════════╗[0m
+[0;32mI (6171) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (6171) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (6181) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (6181) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (6191) rc522: ╚══════════════╝[0m
+[0;32mI (6191) rc522: [0m
+[0;32mI (6191) QUEUE_MANAGER: [RFID] New Ticket: 2 (Waiting: 2)[0m
+[0;32mI (6201) DISPLAY: Update LCD - Counter: -1, Num: 2, Wait: 2[0m
+[0;32mI (6441) COMMUNICATION: Update Server success: Kiosk_RFID[0m
+[0;32mI (6891) RFID: Card removed[0m
+[0;32mI (7081) RFID: RFID card detected[0m
+[0;32mI (7081) rc522: [0m
+[0;32mI (7081) rc522: ╔══════════════╗[0m
+[0;32mI (7081) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (7081) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (7091) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (7091) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (7101) rc522: ╚══════════════╝[0m
+[0;32mI (7101) rc522: [0m
+[0;32mI (7141) QUEUE_MANAGER: [RFID] New Ticket: 3 (Waiting: 3)[0m
+[0;32mI (7141) DISPLAY: Update LCD - Counter: -1, Num: 3, Wait: 3[0m
+[0;32mI (7341) COMMUNICATION: Update Server success: Kiosk_RFID[0m
+[0;32mI (7651) RFID: Card removed[0m
+[0;32mI (26611) QUEUE_MANAGER: [Counter 2] Serving: 1[0m
+[0;32mI (26611) DISPLAY: Update LCD - Counter: 1, Num: 1, Wait: 2[0m
+[0;32mI (26611) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (27151) COMMUNICATION: Update Server success: Counter_2[0m
+[0;32mI (86611) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (86611) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (146611) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (146611) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (206611) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (206611) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (234021) QUEUE_MANAGER: [Counter 1] Serving: 2[0m
+[0;32mI (234021) DISPLAY: Update LCD - Counter: 0, Num: 2, Wait: 1[0m
+[0;32mI (234021) VOICE_PLAYER: Playing: Ticket 2 at Counter 1[0m
+[0;32mI (234131) COMMUNICATION: Update Server success: Counter_1[0m
+[0;32mI (234521) QUEUE_MANAGER: [Counter 1] Serving: 3[0m
+[0;32mI (234521) DISPLAY: Update LCD - Counter: 0, Num: 3, Wait: 0[0m
+[0;33mW (234611) QUEUE_MANAGER: Queue empty at Counter 1[0m
+[0;33mW (234671) QUEUE_MANAGER: Queue empty at Counter 1[0m
+[0;32mI (234871) COMMUNICATION: Update Server success: Counter_1[0m
+[0;32mI (243421) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (261101) RFID: RFID card detected[0m
+[0;32mI (261101) rc522: [0m
+[0;32mI (261101) rc522: ╔══════════════╗[0m
+[0;32mI (261101) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (261101) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (261111) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (261111) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (261121) rc522: ╚══════════════╝[0m
+[0;32mI (261121) rc522: [0m
+[0;32mI (261191) QUEUE_MANAGER: [RFID] New Ticket: 4 (Waiting: 1)[0m
+[0;32mI (261191) DISPLAY: Update LCD - Counter: -1, Num: 4, Wait: 1[0m
+[0;32mI (261291) COMMUNICATION: Update Server success: Kiosk_RFID[0m
+[0;32mI (261831) RFID: Card removed[0m
+[0;32mI (294521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (294521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (303921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (354521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (354521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (363921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (414521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (414521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (423921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (474521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (474521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (483921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (534521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (534521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (543921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (594541) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (594541) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (603941) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (654531) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (654531) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (663931) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (714521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (714521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (723921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (774521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (774521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (783921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (834521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (834521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (843921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (894521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (894521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m
+[0;32mI (903921) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[0;32mI (954521) QUEUE_MANAGER: Recalling due to customers still waiting...[0m
+[0;32mI (954521) VOICE_PLAYER: Playing: Ticket 3 at Counter 1[0m

@@ -1,0 +1,319 @@
+ESP-ROM�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=22da0h (142752) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00032dc8 vaddr=3fc97600 size=02f80h ( 12160) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00035d50 vaddr=40380000 size=0a2c8h ( 41672) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c6874h (813172) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=0010689c vaddr=4038a2c8 size=0d20ch ( 53772) load[0m
+[0;32mI (263) esp_image: segment 5: paddr=00113ab0 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (271) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (271) boot: Disabling RNG early entropy source...[0m
+[0;32mI (281) cpu_start: Unicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     smart_queue_system[0m
+[0;32mI (294) app_init: App version:      1[0m
+[0;32mI (297) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (302) app_init: ELF file SHA256:  aad22bfe3...[0m
+[0;32mI (307) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (311) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (314) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (318) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (322) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (329) heap_init: At 3FC9EFE0 len 00021020 (132 KiB): RAM[0m
+[0;32mI (334) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (340) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (346) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;32mI (358) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (371) main_task: Started on CPU0[0m
+[0;32mI (401) main_task: Calling app_main()[0m
+[0;32mI (401) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (401) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (401) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (411) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (421) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (421) VOICE_PLAYER: Voice Task Started[0m
+[0;32mI (921) RFID: Initializing RC522[0m
+[0;32mI (921) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (921) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (961) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (961) RFID: RC522 scanner started[0m
+[0;32mI (961) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (1021) pp: pp rom version: 9387209[0m
+[0;32mI (1021) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1031) wifi:wifi driver task: 3fcacb04, prio:23, stack:6656, core=0[0m
+[0;32mI (1031) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (1031) wifi:wifi certification version: v7.0[0m
+[0;32mI (1031) wifi:config NVS flash: enabled[0m
+[0;32mI (1031) wifi:config nano formatting: disabled[0m
+[0;32mI (1041) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1041) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1051) wifi:Init management short buffer num: 32[0m
+[0;32mI (1051) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1061) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1061) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1071) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1101) wifi_init: rx ba win: 6[0m
+[0;32mI (1101) wifi_init: accept mbox: 6[0m
+[0;32mI (1101) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1101) wifi_init: udp mbox: 6[0m
+[0;32mI (1101) wifi_init: tcp mbox: 6[0m
+[0;32mI (1101) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1101) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1111) wifi_init: tcp mss: 1440[0m
+[0;32mI (1111) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1111) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1121) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1131) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (1161) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (1161) wifi:enable tsf[0m
+[0;32mI (1251) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1251) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1261) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1261) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1281) wifi:connected with Quyen, aid = 4, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (1281) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (1281) wifi:pm start, type: 1[0m
+
+[0;32mI (1281) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1291) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1351) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2321) esp_netif_handlers: sta ip: 192.168.1.113, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (2321) WIFI: WiFi Connected[0m
+[0;32mI (2321) QUEUE_MANAGER: Queue Manager Task started with Mutex & Timer Support[0m
+[0;32mI (2321) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (2331) main_task: Returned from app_main()[0m
+[1;31mE (7331) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (7331) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (7331) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (7911) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (10111) RFID: RFID card detected[0m
+[0;32mI (10111) rc522: [0m
+[0;32mI (10111) rc522: ╔══════════════╗[0m
+[0;32mI (10111) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (10111) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (10121) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (10121) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (10131) rc522: ╚══════════════╝[0m
+[0;32mI (10131) rc522: [0m
+[0;32mI (10131) QUEUE_MANAGER: [RFID] New Ticket: 1 (Waiting: 1)[0m
+[0;32mI (10141) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (10911) RFID: Card removed[0m
+[1;31mE (13841) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (13841) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (13841) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (15161) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (15161) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (15161) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (20351) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (20351) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (20351) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (26861) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (26861) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (26861) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (33371) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (33371) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (33371) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (39881) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (39881) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (39881) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (46391) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (46391) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (46391) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (52711) QUEUE_MANAGER: [Counter 2] Serving: 1[0m
+[0;32mI (52711) DISPLAY: Update LCD - Counter: 1, Num: 1, Wait: 0[0m
+[0;32mI (52711) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[1;31mE (52901) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (52901) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (52901) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (57721) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (57721) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (57721) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (59411) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (59411) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (59411) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (65921) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (65921) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (65921) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (72431) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (72431) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (72431) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (73311) RFID: RFID card detected[0m
+[0;32mI (73311) rc522: [0m
+[0;32mI (73311) rc522: ╔══════════════╗[0m
+[0;32mI (73311) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (73311) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (73321) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (73321) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (73331) rc522: ╚══════════════╝[0m
+[0;32mI (73331) rc522: [0m
+[0;32mI (73331) QUEUE_MANAGER: [RFID] New Ticket: 2 (Waiting: 1)[0m
+[0;32mI (73341) DISPLAY: Update LCD - Counter: -1, Num: 2, Wait: 1[0m
+[0;32mI (73941) RFID: Card removed[0m
+[0;32mI (78111) QUEUE_MANAGER: [Counter 1] Serving: 2[0m
+[0;32mI (78111) DISPLAY: Update LCD - Counter: 0, Num: 2, Wait: 0[0m
+[0;32mI (78111) VOICE_PLAYER: Playing: Ticket 2 at Counter 1[0m
+[1;31mE (78361) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (78361) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (78361) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (78941) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (78941) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (78941) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (83371) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (83371) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (83371) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (85451) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (85451) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (85451) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (91961) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (91961) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (91961) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (98471) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (98471) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (98471) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (104981) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (104981) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (104981) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (111491) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (111491) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (111491) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (118001) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (118001) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (118001) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (124511) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (124511) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (124511) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (131021) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (131021) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (131021) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (137531) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (137531) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (137531) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (138131) QUEUE_MANAGER: Timer Expired: Recalling current serving numbers...[0m
+[0;32mI (138131) VOICE_PLAYER: Playing: Ticket 2 at Counter 1[0m
+[1;31mE (144041) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (144041) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (144041) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (147531) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[1;31mE (150551) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (150551) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (150551) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (157061) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (157061) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (157061) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (163571) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (163571) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (163571) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (170081) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (170081) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (170081) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (176591) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (176591) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (176591) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (183101) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (183101) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (183101) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (189611) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (189611) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (189611) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (196071) RFID: RFID card detected[0m
+[0;32mI (196071) rc522: [0m
+[0;32mI (196071) rc522: ╔══════════════╗[0m
+[0;32mI (196071) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (196071) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (196081) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (196081) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (196091) rc522: ╚══════════════╝[0m
+[0;32mI (196091) rc522: [0m
+[1;31mE (196121) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (196121) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (196121) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (196151) QUEUE_MANAGER: [RFID] New Ticket: 3 (Waiting: 1)[0m
+[0;32mI (196151) DISPLAY: Update LCD - Counter: -1, Num: 3, Wait: 1[0m
+[0;32mI (196791) RFID: Card removed[0m
+[0;32mI (198121) QUEUE_MANAGER: Timer Expired: Recalling current serving numbers...[0m
+[0;32mI (198121) VOICE_PLAYER: Playing: Ticket 2 at Counter 1[0m
+[1;31mE (201161) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (201161) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (201161) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (202631) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (202631) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (202631) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (207521) VOICE_PLAYER: Playing: Ticket 1 at Counter 2[0m
+[1;31mE (209141) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (209141) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (209141) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (215651) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (215651) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (215651) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (221891) QUEUE_MANAGER: [Counter 2] Serving: 3[0m
+[0;32mI (221891) DISPLAY: Update LCD - Counter: 1, Num: 3, Wait: 0[0m
+[0;32mI (221891) VOICE_PLAYER: Playing: Ticket 3 at Counter 2[0m
+[1;31mE (222161) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (222161) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (222161) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (226901) esp-tls: [sock=55] select() timeout[0m
+[1;31mE (226901) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (226901) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (228671) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (228671) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (228671) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (235181) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (235181) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (235181) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (241691) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (241691) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (241691) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (248201) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (248201) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (248201) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (254711) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (254711) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (254711) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (261221) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (261221) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (261221) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (267731) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (267731) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (267731) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (274241) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (274241) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (274241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (280751) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (280751) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (280751) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (281911) QUEUE_MANAGER: Timer Expired: Recalling current serving numbers...[0m
+[0;32mI (281911) VOICE_PLAYER: Playing: Ticket 2 at Counter 1[0m
+[1;31mE (287261) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (287261) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (287261) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (291311) VOICE_PLAYER: Playing: Ticket 3 at Counter 2[0m
+[1;31mE (293771) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (293771) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (293771) HTTP_CLIENT: Connection failed, sock < 0[0m

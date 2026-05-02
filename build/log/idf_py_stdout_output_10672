@@ -1,0 +1,87 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/nam_4/htn/smart-queue-system/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/queue_manager/CMakeFiles/__idf_queue_manager.dir/queue_manager.c.obj
+[5/10] Linking C static library esp-idf\queue_manager\libqueue_manager.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable smart_queue_system.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/nam_4/htn/smart-queue-system/build/partition_table/partition-table.bin D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin"
+smart_queue_system.bin binary size 0x103b60 bytes. Smallest app partition is 0x177000 bytes. 0x734a0 bytes (31%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.4.2\components\esptool_py && D:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.4.2 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.4.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/nam_4/htn/smart-queue-system/build -P D:/Espressif/frameworks/esp-idf-v5.4.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 smart_queue_system.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM6
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: e8:06:90:63:fb:e8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00113fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20832 bytes to 13058...
+Writing at 0x00000000... (100 %)
+Wrote 20832 bytes (13058 compressed) at 0x00000000 in 0.7 seconds (effective 244.5 kbit/s)...
+Hash of data verified.
+Compressed 1063776 bytes to 601009...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ce92... (5 %)
+Writing at 0x00028956... (8 %)
+Writing at 0x00031d0d... (10 %)
+Writing at 0x00039e68... (13 %)
+Writing at 0x00040624... (16 %)
+Writing at 0x000471c0... (18 %)
+Writing at 0x0004e83a... (21 %)
+Writing at 0x00056ad1... (24 %)
+Writing at 0x0005dba7... (27 %)
+Writing at 0x00064ebb... (29 %)
+Writing at 0x0006ba2a... (32 %)
+Writing at 0x0007203c... (35 %)
+Writing at 0x0007897d... (37 %)
+Writing at 0x0007efeb... (40 %)
+Writing at 0x00084b04... (43 %)
+Writing at 0x0008af04... (45 %)
+Writing at 0x000913e1... (48 %)
+Writing at 0x0009765c... (51 %)
+Writing at 0x0009d892... (54 %)
+Writing at 0x000a3be9... (56 %)
+Writing at 0x000aa8a5... (59 %)
+Writing at 0x000b17bd... (62 %)
+Writing at 0x000b860c... (64 %)
+Writing at 0x000bf7ed... (67 %)
+Writing at 0x000c5dd1... (70 %)
+Writing at 0x000cbeab... (72 %)
+Writing at 0x000d244c... (75 %)
+Writing at 0x000d9d48... (78 %)
+Writing at 0x000e03ad... (81 %)
+Writing at 0x000e6aa8... (83 %)
+Writing at 0x000ec88a... (86 %)
+Writing at 0x000f297e... (89 %)
+Writing at 0x000f9300... (91 %)
+Writing at 0x00101f04... (94 %)
+Writing at 0x00108997... (97 %)
+Writing at 0x0010f6c1... (100 %)
+Wrote 1063776 bytes (601009 compressed) at 0x00010000 in 17.1 seconds (effective 496.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 378.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,1315 @@
+ESP-ROM:e�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  68a19a357...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (547) pp: pp rom version: 9387209[0m
+[0;32mI (547) net80211: net80211 rom version: 9387209[0m
+[0;32mI (557) wifi:wifi driver task: 3fca91a4, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (597) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi_init: rx ba win: 6[0m
+[0;32mI (627) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (627) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (657) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (687) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (687) wifi:enable tsf[0m
+[0;32mI (697) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (697) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (707) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (717) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (747) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (747) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (747) wifi:pm start, type: 1[0m
+
+[0;32mI (747) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (757) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (887) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1807) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1837) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1837) WIFI: WiFi Connected[0m
+[0;32mI (1837) COMMUNICATION: Communication Task Started. Target: http://192.168.1.109:5000/queue[0m
+[0;32mI (1837) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1847) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1847) main_task: Returned from app_main()[0m
+[0;32mI (73217) RFID: RFID card detected[0m
+[0;32mI (73217) rc522: [0m
+[0;32mI (73217) rc522: ╔══════════════╗[0m
+[0;32mI (73217) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (73217) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (73227) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (73227) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (73237) rc522: ╚══════════════╝[0m
+[0;32mI (73237) rc522: [0m
+[0;32mI (73237) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (73247) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (77927) RFID: Card removed[0m
+[1;31mE (78267) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (78267) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (78267) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (78267) COMMUNICATION: HTTP POST failed for Kiosk_RFID: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (121657) QUEUE_MANAGER: [Counter 1] Serving: 1[0m
+[0;32mI (121657) DISPLAY: Update LCD - Counter: 0, Num: 1, Wait: 0[0m
+[0;33mW (121827) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[1;31mE (126677) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (126677) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (126677) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (126677) COMMUNICATION: HTTP POST failed for Counter_1: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (201737) RFID: RFID card detected[0m
+[0;32mI (201737) rc522: [0m
+[0;32mI (201737) rc522: ╔══════════════╗[0m
+[0;32mI (201737) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (201737) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (201747) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (201747) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (201757) rc522: ╚══════════════╝[0m
+[0;32mI (201757) rc522: [0m
+[0;32mI (201807) QUEUE_MANAGER: [RFID] New Ticket: 2[0m
+[0;32mI (201807) DISPLAY: Update LCD - Counter: -1, Num: 2, Wait: 1[0m
+[0;32mI (202737) RFID: Card removed[0m
+[1;31mE (206817) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (206817) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (206817) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (206817) COMMUNICATION: HTTP POST failed for Kiosk_RFID: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (228897) RFID: RFID card detected[0m
+[0;32mI (228897) rc522: [0m
+[0;32mI (228897) rc522: ╔══════════════╗[0m
+[0;32mI (228897) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (228897) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (228907) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (228907) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (228917) rc522: ╚══════════════╝[0m
+[0;32mI (228917) rc522: [0m
+[0;32mI (228927) QUEUE_MANAGER: [RFID] New Ticket: 3[0m
+[0;32mI (228927) DISPLAY: Update LCD - Counter: -1, Num: 3, Wait: 2[0m
+[0;32mI (231727) RFID: Card removed[0m
+[1;31mE (233947) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (233947) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (233947) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (233947) COMMUNICATION: HTTP POST failed for Kiosk_RFID: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (431477) QUEUE_MANAGER: [Counter 1] Serving: 2[0m
+[0;32mI (431477) DISPLAY: Update LCD - Counter: 0, Num: 2, Wait: 1[0m
+[0;32mI (432307) QUEUE_MANAGER: [Counter 1] Serving: 3[0m
+[0;32mI (432307) DISPLAY: Update LCD - Counter: 0, Num: 3, Wait: 0[0m
+[0;33mW (433687) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[1;31mE (436497) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (436497) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (436497) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (436497) COMMUNICATION: HTTP POST failed for Counter_1: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (441517) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (441517) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (441517) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (441517) COMMUNICATION: HTTP POST failed for Counter_1: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (680477) RFID: RFID card detected[0m
+[0;32mI (680477) rc522: [0m
+[0;32mI (680477) rc522: ╔══════════════╗[0m
+[0;32mI (680477) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (680477) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (680487) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (680487) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (680497) rc522: ╚══════════════╝[0m
+[0;32mI (680497) rc522: [0m
+[0;32mI (680537) QUEUE_MANAGER: [RFID] New Ticket: 4[0m
+[0;32mI (680537) DISPLAY: Update LCD - Counter: -1, Num: 4, Wait: 1[0m
+[0;32mI (680867) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (681417) RFID: Card removed[0m
+[0;32mI (703307) RFID: RFID card detected[0m
+[0;32mI (703307) rc522: [0m
+[0;32mI (703307) rc522: ╔══════════════╗[0m
+[0;32mI (703307) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (703307) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (703317) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (703317) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (703327) rc522: ╚══════════════╝[0m
+[0;32mI (703327) rc522: [0m
+[0;32mI (703367) QUEUE_MANAGER: [RFID] New Ticket: 5[0m
+[0;32mI (703367) DISPLAY: Update LCD - Counter: -1, Num: 5, Wait: 2[0m
+[0;32mI (703557) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (704727) RFID: Card removed[0m
+[0;32mI (742277) RFID: RFID card detected[0m
+[0;32mI (742277) rc522: [0m
+[0;32mI (742277) rc522: ╔══════════════╗[0m
+[0;32mI (742277) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (742277) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (742287) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (742287) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (742297) rc522: ╚══════════════╝[0m
+[0;32mI (742297) rc522: [0m
+[0;32mI (742367) QUEUE_MANAGER: [RFID] New Ticket: 6[0m
+[0;32mI (742367) DISPLAY: Update LCD - Counter: -1, Num: 6, Wait: 3[0m
+[0;32mI (742867) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (743117) RFID: Card removed[0m
+[0;33mW (745987) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (746137) RFID: RFID card detected[0m
+[0;32mI (746137) rc522: [0m
+[0;32mI (746137) rc522: ╔══════════════╗[0m
+[0;32mI (746137) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (746137) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (746147) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (746147) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (746157) rc522: ╚══════════════╝[0m
+[0;32mI (746157) rc522: [0m
+[0;32mI (746167) QUEUE_MANAGER: [RFID] New Ticket: 7[0m
+[0;32mI (746167) DISPLAY: Update LCD - Counter: -1, Num: 7, Wait: 4[0m
+[0;32mI (746997) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (747267) RFID: Card removed[0m
+[0;32mI (747807) RFID: RFID card detected[0m
+[0;32mI (747807) rc522: [0m
+[0;32mI (747807) rc522: ╔══════════════╗[0m
+[0;32mI (747807) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (747807) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (747817) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (747817) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (747827) rc522: ╚══════════════╝[0m
+[0;32mI (747827) rc522: [0m
+[0;32mI (747877) QUEUE_MANAGER: [RFID] New Ticket: 8[0m
+[0;32mI (747877) DISPLAY: Update LCD - Counter: -1, Num: 8, Wait: 5[0m
+[0;32mI (748067) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (748737) RFID: Card removed[0m
+[0;32mI (752077) RFID: RFID card detected[0m
+[0;32mI (752077) rc522: [0m
+[0;32mI (752077) rc522: ╔══════════════╗[0m
+[0;32mI (752077) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (752077) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (752087) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (752087) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (752097) rc522: ╚══════════════╝[0m
+[0;32mI (752097) rc522: [0m
+[0;32mI (752117) QUEUE_MANAGER: [RFID] New Ticket: 9[0m
+[0;32mI (752117) DISPLAY: Update LCD - Counter: -1, Num: 9, Wait: 6[0m
+[0;32mI (752437) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (752627) RFID: Card removed[0m
+[0;32mI (757207) QUEUE_MANAGER: [Counter 1] Serving: 4[0m
+[0;32mI (757207) DISPLAY: Update LCD - Counter: 0, Num: 4, Wait: 5[0m
+[0;32mI (757267) QUEUE_MANAGER: [Counter 1] Serving: 5[0m
+[0;32mI (757267) DISPLAY: Update LCD - Counter: 0, Num: 5, Wait: 4[0m
+[0;32mI (757357) QUEUE_MANAGER: [Counter 1] Serving: 6[0m
+[0;32mI (757357) DISPLAY: Update LCD - Counter: 0, Num: 6, Wait: 3[0m
+[0;32mI (757687) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (757857) QUEUE_MANAGER: [Counter 1] Serving: 7[0m
+[0;32mI (757857) DISPLAY: Update LCD - Counter: 0, Num: 7, Wait: 2[0m
+[0;32mI (757927) QUEUE_MANAGER: [Counter 1] Serving: 8[0m
+[0;32mI (757927) DISPLAY: Update LCD - Counter: 0, Num: 8, Wait: 1[0m
+[0;32mI (757977) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (758447) QUEUE_MANAGER: [Counter 1] Serving: 9[0m
+[0;32mI (758447) DISPLAY: Update LCD - Counter: 0, Num: 9, Wait: 0[0m
+[0;33mW (758947) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (759137) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (759227) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (759287) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (759397) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (759637) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (759677) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (760797) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (763037) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (766187) RFID: RFID card detected[0m
+[0;32mI (766187) rc522: [0m
+[0;32mI (766187) rc522: ╔══════════════╗[0m
+[0;32mI (766187) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (766187) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (766197) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (766197) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (766207) rc522: ╚══════════════╝[0m
+[0;32mI (766207) rc522: [0m
+[0;32mI (766237) QUEUE_MANAGER: [RFID] New Ticket: 10[0m
+[0;32mI (766237) DISPLAY: Update LCD - Counter: -1, Num: 10, Wait: 1[0m
+[0;32mI (766987) RFID: Card removed[0m
+[0;32mI (768617) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;33mW (778327) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (778477) RFID: RFID card detected[0m
+[0;32mI (778477) rc522: [0m
+[0;32mI (778477) rc522: ╔══════════════╗[0m
+[0;32mI (778477) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (778477) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (778487) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (778487) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (778497) rc522: ╚══════════════╝[0m
+[0;32mI (778497) rc522: [0m
+[0;32mI (778507) QUEUE_MANAGER: [RFID] New Ticket: 11[0m
+[0;32mI (778507) DISPLAY: Update LCD - Counter: -1, Num: 11, Wait: 2[0m
+[0;32mI (778637) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (779187) RFID: Card removed[0m
+[0;32mI (782177) RFID: RFID card detected[0m
+[0;32mI (782177) rc522: [0m
+[0;32mI (782177) rc522: ╔══════════════╗[0m
+[0;32mI (782177) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (782177) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (782187) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (782187) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (782197) rc522: ╚══════════════╝[0m
+[0;32mI (782197) rc522: [0m
+[0;32mI (782207) QUEUE_MANAGER: [RFID] New Ticket: 12[0m
+[0;32mI (782207) DISPLAY: Update LCD - Counter: -1, Num: 12, Wait: 3[0m
+[0;32mI (782337) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (782977) RFID: Card removed[0m
+[0;32mI (789387) QUEUE_MANAGER: [Counter 1] Serving: 10[0m
+[0;32mI (789387) DISPLAY: Update LCD - Counter: 0, Num: 10, Wait: 2[0m
+[0;32mI (789507) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (792647) QUEUE_MANAGER: [Counter 1] Serving: 11[0m
+[0;32mI (792647) DISPLAY: Update LCD - Counter: 0, Num: 11, Wait: 1[0m
+[0;32mI (793857) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (795347) QUEUE_MANAGER: [Counter 1] Serving: 12[0m
+[0;32mI (795347) DISPLAY: Update LCD - Counter: 0, Num: 12, Wait: 0[0m
+[0;32mI (795457) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (898687) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (898837) RFID: RFID card detected[0m
+[0;32mI (898837) rc522: [0m
+[0;32mI (898837) rc522: ╔══════════════╗[0m
+[0;32mI (898837) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (898837) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (898847) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (898847) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (898857) rc522: ╚══════════════╝[0m
+[0;32mI (898857) rc522: [0m
+[0;32mI (898867) QUEUE_MANAGER: [RFID] New Ticket: 13[0m
+[0;32mI (898867) DISPLAY: Update LCD - Counter: -1, Num: 13, Wait: 1[0m
+[0;32mI (899067) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (899687) RFID: Card removed[0m
+[0;32mI (1097837) RFID: RFID card detected[0m
+[0;32mI (1097837) rc522: [0m
+[0;32mI (1097837) rc522: ╔══════════════╗[0m
+[0;32mI (1097837) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1097837) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1097847) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1097847) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1097857) rc522: ╚══════════════╝[0m
+[0;32mI (1097857) rc522: [0m
+[0;32mI (1097917) QUEUE_MANAGER: [RFID] New Ticket: 14[0m
+[0;32mI (1097917) DISPLAY: Update LCD - Counter: -1, Num: 14, Wait: 2[0m
+[0;32mI (1098217) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1098627) RFID: Card removed[0m
+[0;32mI (1100637) RFID: RFID card detected[0m
+[0;32mI (1100637) rc522: [0m
+[0;32mI (1100637) rc522: ╔══════════════╗[0m
+[0;32mI (1100637) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1100637) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1100647) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1100647) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1100657) rc522: ╚══════════════╝[0m
+[0;32mI (1100657) rc522: [0m
+[0;32mI (1100727) QUEUE_MANAGER: [RFID] New Ticket: 15[0m
+[0;32mI (1100727) DISPLAY: Update LCD - Counter: -1, Num: 15, Wait: 3[0m
+[0;32mI (1100837) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1101507) RFID: Card removed[0m
+[0;32mI (1102537) RFID: RFID card detected[0m
+[0;32mI (1102537) rc522: [0m
+[0;32mI (1102537) rc522: ╔══════════════╗[0m
+[0;32mI (1102537) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1102537) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1102547) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1102547) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1102557) rc522: ╚══════════════╝[0m
+[0;32mI (1102557) rc522: [0m
+[0;32mI (1102567) QUEUE_MANAGER: [RFID] New Ticket: 16[0m
+[0;32mI (1102567) DISPLAY: Update LCD - Counter: -1, Num: 16, Wait: 4[0m
+[0;32mI (1102697) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1103417) RFID: Card removed[0m
+[0;32mI (1104547) QUEUE_MANAGER: [Counter 1] Serving: 13[0m
+[0;32mI (1104547) DISPLAY: Update LCD - Counter: 0, Num: 13, Wait: 3[0m
+[0;32mI (1104657) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1104717) QUEUE_MANAGER: [Counter 1] Serving: 14[0m
+[0;32mI (1104717) DISPLAY: Update LCD - Counter: 0, Num: 14, Wait: 2[0m
+[0;32mI (1104777) QUEUE_MANAGER: [Counter 1] Serving: 15[0m
+[0;32mI (1104777) DISPLAY: Update LCD - Counter: 0, Num: 15, Wait: 1[0m
+[0;32mI (1104857) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1105047) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1105427) QUEUE_MANAGER: [Counter 1] Serving: 16[0m
+[0;32mI (1105427) DISPLAY: Update LCD - Counter: 0, Num: 16, Wait: 0[0m
+[0;32mI (1105537) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (1105597) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1105877) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1105947) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1106477) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1106537) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1107037) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1107757) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;33mW (1108477) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (1110467) RFID: RFID card detected[0m
+[0;32mI (1110467) rc522: [0m
+[0;32mI (1110467) rc522: ╔══════════════╗[0m
+[0;32mI (1110467) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1110467) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1110477) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1110477) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1110487) rc522: ╚══════════════╝[0m
+[0;32mI (1110487) rc522: [0m
+[0;32mI (1110497) QUEUE_MANAGER: [RFID] New Ticket: 17[0m
+[0;32mI (1110497) DISPLAY: Update LCD - Counter: -1, Num: 17, Wait: 1[0m
+[0;32mI (1110637) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1111267) RFID: Card removed[0m
+[0;32mI (1112147) QUEUE_MANAGER: [Counter 1] Serving: 17[0m
+[0;32mI (1112147) DISPLAY: Update LCD - Counter: 0, Num: 17, Wait: 0[0m
+[0;32mI (1112247) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;33mW (1112317) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (1252997) RFID: RFID card detected[0m
+[0;32mI (1252997) rc522: [0m
+[0;32mI (1252997) rc522: ╔══════════════╗[0m
+[0;32mI (1252997) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1252997) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1253007) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1253007) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1253017) rc522: ╚══════════════╝[0m
+[0;32mI (1253017) rc522: [0m
+[0;32mI (1253027) QUEUE_MANAGER: [RFID] New Ticket: 18[0m
+[0;32mI (1253027) DISPLAY: Update LCD - Counter: -1, Num: 18, Wait: 1[0m
+[0;32mI (1253247) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (1255737) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (1256037) RFID: Card removed[0m
+[0;32mI (1257117) QUEUE_MANAGER: [Counter 1] Serving: 18[0m
+[0;32mI (1257117) DISPLAY: Update LCD - Counter: 0, Num: 18, Wait: 0[0m
+[0;32mI (1257327) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1259797) RFID: RFID card detected[0m
+[0;32mI (1259797) rc522: [0m
+[0;32mI (1259797) rc522: ╔══════════════╗[0m
+[0;32mI (1259797) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1259797) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1259807) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1259807) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1259817) rc522: ╚══════════════╝[0m
+[0;32mI (1259817) rc522: [0m
+[0;32mI (1259877) QUEUE_MANAGER: [RFID] New Ticket: 19[0m
+[0;32mI (1259877) DISPLAY: Update LCD - Counter: -1, Num: 19, Wait: 1[0m
+[0;32mI (1259997) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1260667) RFID: Card removed[0m
+[0;32mI (1261397) RFID: RFID card detected[0m
+[0;32mI (1261397) rc522: [0m
+[0;32mI (1261397) rc522: ╔══════════════╗[0m
+[0;32mI (1261397) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1261397) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1261407) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1261407) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1261417) rc522: ╚══════════════╝[0m
+[0;32mI (1261417) rc522: [0m
+[0;32mI (1261477) QUEUE_MANAGER: [RFID] New Ticket: 20[0m
+[0;32mI (1261477) DISPLAY: Update LCD - Counter: -1, Num: 20, Wait: 2[0m
+[0;32mI (1262257) RFID: Card removed[0m
+[0;32mI (1262447) RFID: RFID card detected[0m
+[0;32mI (1262447) rc522: [0m
+[0;32mI (1262447) rc522: ╔══════════════╗[0m
+[0;32mI (1262447) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1262447) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1262457) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1262457) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1262467) rc522: ╚══════════════╝[0m
+[0;32mI (1262467) rc522: [0m
+[0;32mI (1262527) QUEUE_MANAGER: [RFID] New Ticket: 21[0m
+[0;32mI (1262527) DISPLAY: Update LCD - Counter: -1, Num: 21, Wait: 3[0m
+[0;32mI (1263047) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1263257) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1263307) RFID: Card removed[0m
+[1;31mE (1263427) rc522: rc522_picc_transceive(206): F523[0m
+[0;33mW (1263447) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (1263597) RFID: RFID card detected[0m
+[0;32mI (1263597) rc522: [0m
+[0;32mI (1263597) rc522: ╔══════════════╗[0m
+[0;32mI (1263597) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1263597) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1263607) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1263607) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1263617) rc522: ╚══════════════╝[0m
+[0;32mI (1263617) rc522: [0m
+[0;32mI (1263687) QUEUE_MANAGER: [RFID] New Ticket: 22[0m
+[0;32mI (1263687) DISPLAY: Update LCD - Counter: -1, Num: 22, Wait: 4[0m
+[0;32mI (1263797) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1264327) RFID: Card removed[0m
+[0;32mI (1264657) RFID: RFID card detected[0m
+[0;32mI (1264657) rc522: [0m
+[0;32mI (1264657) rc522: ╔══════════════╗[0m
+[0;32mI (1264657) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1264657) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1264667) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1264667) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1264677) rc522: ╚══════════════╝[0m
+[0;32mI (1264677) rc522: [0m
+[0;32mI (1264737) QUEUE_MANAGER: [RFID] New Ticket: 23[0m
+[0;32mI (1264737) DISPLAY: Update LCD - Counter: -1, Num: 23, Wait: 5[0m
+[0;32mI (1265017) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1265527) RFID: Card removed[0m
+[0;32mI (1265787) RFID: RFID card detected[0m
+[0;32mI (1265787) rc522: [0m
+[0;32mI (1265787) rc522: ╔══════════════╗[0m
+[0;32mI (1265787) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1265787) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1265797) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1265797) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1265807) rc522: ╚══════════════╝[0m
+[0;32mI (1265807) rc522: [0m
+[0;32mI (1265817) QUEUE_MANAGER: [RFID] New Ticket: 24[0m
+[0;32mI (1265817) DISPLAY: Update LCD - Counter: -1, Num: 24, Wait: 6[0m
+[0;32mI (1265927) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1266597) RFID: Card removed[0m
+[0;32mI (1266927) RFID: RFID card detected[0m
+[0;32mI (1266927) rc522: [0m
+[0;32mI (1266927) rc522: ╔══════════════╗[0m
+[0;32mI (1266927) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1266927) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1266937) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1266937) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1266947) rc522: ╚══════════════╝[0m
+[0;32mI (1266947) rc522: [0m
+[0;32mI (1266977) QUEUE_MANAGER: [RFID] New Ticket: 25[0m
+[0;32mI (1266977) DISPLAY: Update LCD - Counter: -1, Num: 25, Wait: 7[0m
+[0;32mI (1267117) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1267717) RFID: Card removed[0m
+[0;32mI (1268147) RFID: RFID card detected[0m
+[0;32mI (1268147) rc522: [0m
+[0;32mI (1268147) rc522: ╔══════════════╗[0m
+[0;32mI (1268147) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1268147) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1268157) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1268157) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1268167) rc522: ╚══════════════╝[0m
+[0;32mI (1268167) rc522: [0m
+[0;32mI (1268177) QUEUE_MANAGER: [RFID] New Ticket: 26[0m
+[0;32mI (1268177) DISPLAY: Update LCD - Counter: -1, Num: 26, Wait: 8[0m
+[0;32mI (1268297) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (1268337) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (1268787) RFID: Card removed[0m
+[0;32mI (1269117) RFID: RFID card detected[0m
+[0;32mI (1269117) rc522: [0m
+[0;32mI (1269117) rc522: ╔══════════════╗[0m
+[0;32mI (1269117) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1269117) rc522: ║     RFID     ║ UID:  EC 8C 4C 06[0m
+[0;32mI (1269127) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1269127) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1269137) rc522: ╚══════════════╝[0m
+[0;32mI (1269137) rc522: [0m
+[0;32mI (1269147) QUEUE_MANAGER: [RFID] New Ticket: 27[0m
+[0;32mI (1269147) DISPLAY: Update LCD - Counter: -1, Num: 27, Wait: 9[0m
+[0;32mI (1269287) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1269917) RFID: Card removed[0m
+[0;32mI (1299317) QUEUE_MANAGER: [Counter 1] Serving: 19[0m
+[0;32mI (1299317) DISPLAY: Update LCD - Counter: 0, Num: 19, Wait: 8[0m
+[0;32mI (1299557) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1300917) QUEUE_MANAGER: [Counter 1] Serving: 20[0m
+[0;32mI (1300917) DISPLAY: Update LCD - Counter: 0, Num: 20, Wait: 7[0m
+[0;32mI (1301077) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1302527) QUEUE_MANAGER: [Counter 1] Serving: 21[0m
+[0;32mI (1302537) DISPLAY: Update LCD - Counter: 0, Num: 21, Wait: 6[0m
+[0;32mI (1302667) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1304287) QUEUE_MANAGER: [Counter 1] Serving: 22[0m
+[0;32mI (1304287) DISPLAY: Update LCD - Counter: 0, Num: 22, Wait: 5[0m
+[0;32mI (1304427) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1304457) QUEUE_MANAGER: [Counter 1] Serving: 23[0m
+[0;32mI (1304457) DISPLAY: Update LCD - Counter: 0, Num: 23, Wait: 4[0m
+[0;32mI (1304517) QUEUE_MANAGER: [Counter 1] Serving: 24[0m
+[0;32mI (1304517) DISPLAY: Update LCD - Counter: 0, Num: 24, Wait: 3[0m
+[0;32mI (1304637) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1304947) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1306447) QUEUE_MANAGER: [Counter 1] Serving: 25[0m
+[0;32mI (1306447) DISPLAY: Update LCD - Counter: 0, Num: 25, Wait: 2[0m
+[0;32mI (1306567) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1309817) QUEUE_MANAGER: [Counter 1] Serving: 26[0m
+[0;32mI (1309817) DISPLAY: Update LCD - Counter: 0, Num: 26, Wait: 1[0m
+[0;32mI (1309977) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1309987) QUEUE_MANAGER: [Counter 1] Serving: 27[0m
+[0;32mI (1309987) DISPLAY: Update LCD - Counter: 0, Num: 27, Wait: 0[0m
+[0;32mI (1311127) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1319177) RFID: RFID card detected[0m
+[0;32mI (1319177) rc522: [0m
+[0;32mI (1319177) rc522: ╔══════════════╗[0m
+[0;32mI (1319177) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1319177) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1319187) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1319187) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1319197) rc522: ╚══════════════╝[0m
+[0;32mI (1319197) rc522: [0m
+[0;32mI (1319237) QUEUE_MANAGER: [RFID] New Ticket: 28[0m
+[0;32mI (1319237) DISPLAY: Update LCD - Counter: -1, Num: 28, Wait: 1[0m
+[0;32mI (1319387) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1320037) RFID: Card removed[0m
+[0;32mI (1321217) QUEUE_MANAGER: [Counter 1] Serving: 28[0m
+[0;32mI (1321217) DISPLAY: Update LCD - Counter: 0, Num: 28, Wait: 0[0m
+[0;32mI (1321447) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1323097) RFID: RFID card detected[0m
+[0;32mI (1323097) rc522: [0m
+[0;32mI (1323097) rc522: ╔══════════════╗[0m
+[0;32mI (1323097) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1323097) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1323107) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1323107) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1323117) rc522: ╚══════════════╝[0m
+[0;32mI (1323117) rc522: [0m
+[0;32mI (1323127) QUEUE_MANAGER: [RFID] New Ticket: 29[0m
+[0;32mI (1323127) DISPLAY: Update LCD - Counter: -1, Num: 29, Wait: 1[0m
+[0;32mI (1323267) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1323797) RFID: Card removed[0m
+[0;32mI (1323847) RFID: RFID card detected[0m
+[0;32mI (1323847) rc522: [0m
+[0;32mI (1323847) rc522: ╔══════════════╗[0m
+[0;32mI (1323847) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1323847) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1323857) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1323857) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1323867) rc522: ╚══════════════╝[0m
+[0;32mI (1323867) rc522: [0m
+[0;32mI (1323877) QUEUE_MANAGER: [RFID] New Ticket: 30[0m
+[0;32mI (1323877) DISPLAY: Update LCD - Counter: -1, Num: 30, Wait: 2[0m
+[0;32mI (1324087) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1324517) RFID: Card removed[0m
+[0;32mI (1324637) RFID: RFID card detected[0m
+[0;32mI (1324637) rc522: [0m
+[0;32mI (1324637) rc522: ╔══════════════╗[0m
+[0;32mI (1324637) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1324637) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1324647) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1324647) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1324657) rc522: ╚══════════════╝[0m
+[0;32mI (1324657) rc522: [0m
+[0;32mI (1324707) QUEUE_MANAGER: [RFID] New Ticket: 31[0m
+[0;32mI (1324707) DISPLAY: Update LCD - Counter: -1, Num: 31, Wait: 3[0m
+[0;32mI (1324907) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1325287) RFID: Card removed[0m
+[0;32mI (1325917) QUEUE_MANAGER: [Counter 1] Serving: 29[0m
+[0;32mI (1325917) DISPLAY: Update LCD - Counter: 0, Num: 29, Wait: 2[0m
+[0;32mI (1326097) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1326637) QUEUE_MANAGER: [Counter 1] Serving: 30[0m
+[0;32mI (1326637) DISPLAY: Update LCD - Counter: 0, Num: 30, Wait: 1[0m
+[0;32mI (1326757) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1327277) QUEUE_MANAGER: [Counter 1] Serving: 31[0m
+[0;32mI (1327277) DISPLAY: Update LCD - Counter: 0, Num: 31, Wait: 0[0m
+[0;32mI (1327477) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1480247) RFID: RFID card detected[0m
+[0;32mI (1480247) rc522: [0m
+[0;32mI (1480247) rc522: ╔══════════════╗[0m
+[0;32mI (1480247) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1480247) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1480257) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1480257) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1480267) rc522: ╚══════════════╝[0m
+[0;32mI (1480267) rc522: [0m
+[0;32mI (1480297) QUEUE_MANAGER: [RFID] New Ticket: 32[0m
+[0;32mI (1480297) DISPLAY: Update LCD - Counter: -1, Num: 32, Wait: 1[0m
+[0;32mI (1480807) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1481107) RFID: Card removed[0m
+[0;32mI (1482317) QUEUE_MANAGER: [Counter 1] Serving: 32[0m
+[0;32mI (1482317) DISPLAY: Update LCD - Counter: 0, Num: 32, Wait: 0[0m
+[0;32mI (1482517) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1485147) RFID: RFID card detected[0m
+[0;32mI (1485147) rc522: [0m
+[0;32mI (1485147) rc522: ╔══════════════╗[0m
+[0;32mI (1485147) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1485147) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1485157) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1485157) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1485167) rc522: ╚══════════════╝[0m
+[0;32mI (1485167) rc522: [0m
+[0;32mI (1485187) QUEUE_MANAGER: [RFID] New Ticket: 33[0m
+[0;32mI (1485187) DISPLAY: Update LCD - Counter: -1, Num: 33, Wait: 1[0m
+[0;32mI (1485337) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (1485727) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (1485777) RFID: Card removed[0m
+[0;32mI (1485897) RFID: RFID card detected[0m
+[0;32mI (1485897) rc522: [0m
+[0;32mI (1485897) rc522: ╔══════════════╗[0m
+[0;32mI (1485897) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1485897) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1485907) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1485907) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1485917) rc522: ╚══════════════╝[0m
+[0;32mI (1485917) rc522: [0m
+[0;32mI (1485927) QUEUE_MANAGER: [RFID] New Ticket: 34[0m
+[0;32mI (1485927) DISPLAY: Update LCD - Counter: -1, Num: 34, Wait: 2[0m
+[0;32mI (1486067) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1486487) RFID: Card removed[0m
+[0;32mI (1486657) RFID: RFID card detected[0m
+[0;32mI (1486657) rc522: [0m
+[0;32mI (1486657) rc522: ╔══════════════╗[0m
+[0;32mI (1486657) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1486657) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1486667) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1486667) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1486677) rc522: ╚══════════════╝[0m
+[0;32mI (1486677) rc522: [0m
+[0;32mI (1486687) QUEUE_MANAGER: [RFID] New Ticket: 35[0m
+[0;32mI (1486687) DISPLAY: Update LCD - Counter: -1, Num: 35, Wait: 3[0m
+[0;32mI (1486827) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (1487177) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (1487227) RFID: Card removed[0m
+[0;32mI (1487347) RFID: RFID card detected[0m
+[0;32mI (1487347) rc522: [0m
+[0;32mI (1487347) rc522: ╔══════════════╗[0m
+[0;32mI (1487347) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1487347) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1487357) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1487357) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1487367) rc522: ╚══════════════╝[0m
+[0;32mI (1487367) rc522: [0m
+[0;32mI (1487407) QUEUE_MANAGER: [RFID] New Ticket: 36[0m
+[0;32mI (1487407) DISPLAY: Update LCD - Counter: -1, Num: 36, Wait: 4[0m
+[0;32mI (1487557) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (1487927) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (1487977) RFID: Card removed[0m
+[0;32mI (1488097) RFID: RFID card detected[0m
+[0;32mI (1488097) rc522: [0m
+[0;32mI (1488097) rc522: ╔══════════════╗[0m
+[0;32mI (1488097) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (1488097) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (1488107) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (1488107) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (1488117) rc522: ╚══════════════╝[0m
+[0;32mI (1488117) rc522: [0m
+[0;32mI (1488127) QUEUE_MANAGER: [RFID] New Ticket: 37[0m
+[0;32mI (1488127) DISPLAY: Update LCD - Counter: -1, Num: 37, Wait: 5[0m
+[0;32mI (1488267) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (1488757) RFID: Card removed[0m
+[0;32mI (1489337) QUEUE_MANAGER: [Counter 1] Serving: 33[0m
+[0;32mI (1489337) DISPLAY: Update LCD - Counter: 0, Num: 33, Wait: 4[0m
+[0;32mI (1489407) QUEUE_MANAGER: [Counter 1] Serving: 34[0m
+[0;32mI (1489407) DISPLAY: Update LCD - Counter: 0, Num: 34, Wait: 3[0m
+[0;32mI (1489527) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1489627) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1494547) QUEUE_MANAGER: [Counter 1] Serving: 35[0m
+[0;32mI (1494547) DISPLAY: Update LCD - Counter: 0, Num: 35, Wait: 2[0m
+[0;32mI (1494717) QUEUE_MANAGER: [Counter 1] Serving: 36[0m
+[0;32mI (1494717) DISPLAY: Update LCD - Counter: 0, Num: 36, Wait: 1[0m
+[0;32mI (1495107) QUEUE_MANAGER: [Counter 1] Serving: 37[0m
+[0;32mI (1495107) DISPLAY: Update LCD - Counter: 0, Num: 37, Wait: 0[0m
+[0;32mI (1495417) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1495517) COMMUNICATION: Sent Counter_1 success, status=500[0m
+[0;32mI (1495647) COMMUNICATION: Sent Counter_1 success, status=500[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  68a19a357...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (547) pp: pp rom version: 9387209[0m
+[0;32mI (547) net80211: net80211 rom version: 9387209[0m
+[0;32mI (557) wifi:wifi driver task: 3fca91a4, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (597) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi_init: rx ba win: 6[0m
+[0;32mI (627) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (627) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (657) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (687) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (687) wifi:enable tsf[0m
+[0;32mI (697) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (697) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (707) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (707) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (727) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (727) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (727) wifi:pm start, type: 1[0m
+
+[0;32mI (727) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (737) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (817) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1757) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1757) WIFI: WiFi Connected[0m
+[0;32mI (1777) COMMUNICATION: Communication Task Started. Target: http://192.168.1.109:5000/queue[0m
+[0;32mI (1777) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1777) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1787) main_task: Returned from app_main()[0m
+[0;32mI (2767) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;33mW (57567) rc522: rc522_task(282): select failed (err=F528)[0m
+[1;31mE (57617) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (60047) RFID: RFID card detected[0m
+[0;32mI (60047) rc522: [0m
+[0;32mI (60047) rc522: ╔══════════════╗[0m
+[0;32mI (60047) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (60047) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (60057) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (60057) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (60067) rc522: ╚══════════════╝[0m
+[0;32mI (60067) rc522: [0m
+[0;32mI (60077) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (60077) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (60237) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (60637) rc522: rc522_picc_transceive(206): F523[0m
+[1;31mE (60707) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (60787) RFID: Card removed[0m
+[1;31mE (61447) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (61567) RFID: RFID card detected[0m
+[0;32mI (61567) rc522: [0m
+[0;32mI (61567) rc522: ╔══════════════╗[0m
+[0;32mI (61567) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (61567) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (61577) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (61577) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (61587) rc522: ╚══════════════╝[0m
+[0;32mI (61587) rc522: [0m
+[0;32mI (61587) QUEUE_MANAGER: [RFID] New Ticket: 2[0m
+[0;32mI (61597) DISPLAY: Update LCD - Counter: -1, Num: 2, Wait: 2[0m
+[0;32mI (62107) RFID: Card removed[0m
+[0;32mI (62187) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[1;31mE (68457) rc522: rc522_picc_transceive(206): F523[0m
+[1;31mE (68577) rc522: rc522_picc_transceive(206): F523[0m
+[0;32mI (68697) RFID: RFID card detected[0m
+[0;32mI (68697) rc522: [0m
+[0;32mI (68697) rc522: ╔══════════════╗[0m
+[0;32mI (68697) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (68697) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (68707) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (68707) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (68717) rc522: ╚══════════════╝[0m
+[0;32mI (68717) rc522: [0m
+[0;32mI (68717) QUEUE_MANAGER: [RFID] New Ticket: 3[0m
+[0;32mI (68727) DISPLAY: Update LCD - Counter: -1, Num: 3, Wait: 3[0m
+[0;32mI (68877) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (74877) RFID: Card removed[0m
+[0;33mW (75347) rc522: rc522_task(282): select failed (err=F52C)[0m
+[0;32mI (75517) RFID: RFID card detected[0m
+[0;32mI (75517) rc522: [0m
+[0;32mI (75517) rc522: ╔══════════════╗[0m
+[0;32mI (75517) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (75517) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (75527) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (75527) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (75537) rc522: ╚══════════════╝[0m
+[0;32mI (75537) rc522: [0m
+[0;32mI (75537) QUEUE_MANAGER: [RFID] New Ticket: 4[0m
+[0;32mI (75547) DISPLAY: Update LCD - Counter: -1, Num: 4, Wait: 4[0m
+[0;32mI (75677) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (77017) RFID: Card removed[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  68a19a357...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (547) pp: pp rom version: 9387209[0m
+[0;32mI (547) net80211: net80211 rom version: 9387209[0m
+[0;32mI (557) wifi:wifi driver task: 3fca91a4, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (597) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi_init: rx ba win: 6[0m
+[0;32mI (627) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (627) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (657) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (687) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (687) wifi:enable tsf[0m
+[0;32mI (697) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (697) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (697) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (707) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (717) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (727) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (727) wifi:pm start, type: 1[0m
+
+[0;32mI (727) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (737) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (767) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1777) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1777) WIFI: WiFi Connected[0m
+[0;32mI (1777) COMMUNICATION: Communication Task Started. Target: http://192.168.1.109:5000/queue[0m
+[0;32mI (1777) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1787) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1787) main_task: Returned from app_main()[0m
+[0;33mW (13037) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (13187) RFID: RFID card detected[0m
+[0;32mI (13187) rc522: [0m
+[0;32mI (13187) rc522: ╔══════════════╗[0m
+[0;32mI (13187) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (13187) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (13197) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (13197) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (13207) rc522: ╚══════════════╝[0m
+[0;32mI (13207) rc522: [0m
+[0;32mI (13227) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (13227) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (13257) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (13417) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (14007) RFID: Card removed[0m
+[0;32mI (22707) QUEUE_MANAGER: [Counter 1] Serving: 1[0m
+[0;32mI (22707) DISPLAY: Update LCD - Counter: 0, Num: 1, Wait: 0[0m
+[0;32mI (22957) COMMUNICATION: Sent Counter_1 success, status=500[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  68a19a357...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (547) pp: pp rom version: 9387209[0m
+[0;32mI (547) net80211: net80211 rom version: 9387209[0m
+[0;32mI (557) wifi:wifi driver task: 3fca91a4, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (597) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi_init: rx ba win: 6[0m
+[0;32mI (627) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (627) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (657) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (687) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (697) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (697) wifi:enable tsf[0m
+[0;32mI (707) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (707) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (717) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (727) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (737) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (737) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (737) wifi:pm start, type: 1[0m
+
+[0;32mI (737) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (747) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (797) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1777) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1777) WIFI: WiFi Connected[0m
+[0;32mI (1777) COMMUNICATION: Communication Task Started. Target: http://192.168.1.109:5000/queue[0m
+[0;32mI (1777) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1787) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1787) main_task: Returned from app_main()[0m
+[0;32mI (5817) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;33mW (41997) rc522: rc522_task(282): select failed (err=F52C)[0m
+[0;32mI (42167) RFID: RFID card detected[0m
+[0;32mI (42167) rc522: [0m
+[0;32mI (42167) rc522: ╔══════════════╗[0m
+[0;32mI (42167) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (42167) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (42177) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (42177) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (42187) rc522: ╚══════════════╝[0m
+[0;32mI (42187) rc522: [0m
+[0;32mI (42187) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (42197) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (42547) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (44287) RFID: Card removed[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  68a19a357...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[0;32mI (547) pp: pp rom version: 9387209[0m
+[0;32mI (547) net80211: net80211 rom version: 9387209[0m
+[0;32mI (557) wifi:wifi driver task: 3fca9120, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (597) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi_init: rx ba win: 6[0m
+[0;32mI (627) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (627) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (647) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (687) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (687) wifi:enable tsf[0m
+[0;32mI (697) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (697) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (717) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (717) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (737) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (737) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (737) wifi:pm start, type: 1[0m
+
+[0;32mI (737) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (747) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (827) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1777) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1777) WIFI: WiFi Connected[0m
+[0;32mI (1777) COMMUNICATION: Communication Task Started. Target: http://192.168.1.109:5000/queue[0m
+[0;32mI (1777) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1787) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1787) main_task: Returned from app_main()[0m
+[0;32mI (7837) RFID: RFID card detected[0m
+[0;32mI (7837) rc522: [0m
+[0;32mI (7837) rc522: ╔══════════════╗[0m
+[0;32mI (7837) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (7837) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (7847) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (7847) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (7857) rc522: ╚══════════════╝[0m
+[0;32mI (7857) rc522: [0m
+[0;32mI (7857) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (7867) DISPLAY: Update LCD - Counter: -1, Num: 1, Wait: 1[0m
+[0;32mI (7917) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8377) COMMUNICATION: Sent Kiosk_RFID success, status=500[0m
+[0;32mI (9857) RFID: Card removed[0m
+[0;32mI (15237) QUEUE_MANAGER: [Counter 1] Serving: 1[0m
+[0;32mI (15237) DISPLAY: Update LCD - Counter: 0, Num: 1, Wait: 0[0m
+[0;33mW (15407) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[0;32mI (16867) COMMUNICATION: Sent Counter_1 success, status=500[0m

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/nam_4/htn/smart-queue-system/build/CMakeFiles/bootloader
+D:/nam_4/htn/smart-queue-system/build/CMakeFiles/bootloader.rule
+D:/nam_4/htn/smart-queue-system/build/CMakeFiles/bootloader-complete.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/nam_4/htn/smart-queue-system/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,17 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/nam_4/htn/smart-queue-system/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/communication/CMakeFiles/__idf_communication.dir/communication.c.obj
+[5/9] Linking C static library esp-idf\communication\libcommunication.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable smart_queue_system.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\nam_4\htn\smart-queue-system\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.4.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/nam_4/htn/smart-queue-system/build/partition_table/partition-table.bin D:/nam_4/htn/smart-queue-system/build/smart_queue_system.bin"
+smart_queue_system.bin binary size 0x103af0 bytes. Smallest app partition is 0x177000 bytes. 0x73510 bytes (31%) free.

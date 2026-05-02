@@ -1,0 +1,160 @@
+ESP�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 23 2026 18:34:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21e50h (138832) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031e78 vaddr=3fc95e00 size=02f88h ( 12168) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00034e08 vaddr=40380000 size=0b210h ( 45584) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3140h (799040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=00103168 vaddr=4038b210 size=0ab88h ( 43912) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=0010dcf8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (277) cpu_start: Unicore app[0m
+[0;32mI (285) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     smart_queue_system[0m
+[0;32mI (290) app_init: App version:      1[0m
+[0;32mI (293) app_init: Compile time:     Mar 23 2026 18:33:55[0m
+[0;32mI (298) app_init: ELF file SHA256:  26c7cd794...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (310) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9D6B0 len 00022950 (138 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (397) MAIN: Initializing Smart Queue System with Voice Support...[0m
+[0;32mI (397) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (397) BUTTON: Initialized Button on GPIO 0 for Counter 1[0m
+[0;32mI (407) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (417) BUTTON: Initialized Button on GPIO 5 for Counter 2[0m
+[0;32mI (417) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (427) BUTTON: Initialized Button on GPIO 6 for Counter 3[0m
+[0;32mI (427) RFID: Initializing RC522[0m
+[0;32mI (437) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (487) RFID: RC522 scanner started[0m
+[0;32mI (487) DISPLAY: Initializing LCD1602 via I2C...[0m
+[1;31mE (497) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (497) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (497) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed[0m
+[1;31mE (507) DISPLAY: LCD initialization failed! Check wiring/address.[0m
+[0;32mI (527) pp: pp rom version: 9387209[0m
+[0;32mI (527) net80211: net80211 rom version: 9387209[0m
+[0;32mI (537) wifi:wifi driver task: 3fca8370, prio:23, stack:6656, core=0[0m
+[0;32mI (537) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (537) wifi:wifi certification version: v7.0[0m
+[0;32mI (537) wifi:config NVS flash: enabled[0m
+[0;32mI (537) wifi:config nano formatting: disabled[0m
+[0;32mI (547) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (547) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (547) wifi:Init management short buffer num: 32[0m
+[0;32mI (557) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (557) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (567) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (567) wifi:Init static rx buffer num: 10[0m
+[0;32mI (577) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (577) wifi_init: rx ba win: 6[0m
+[0;32mI (577) wifi_init: accept mbox: 6[0m
+[0;32mI (577) wifi_init: tcpip mbox: 32[0m
+[0;32mI (587) wifi_init: udp mbox: 6[0m
+[0;32mI (587) wifi_init: tcp mbox: 6[0m
+[0;32mI (587) wifi_init: tcp tx win: 5760[0m
+[0;32mI (597) wifi_init: tcp rx win: 5760[0m
+[0;32mI (597) wifi_init: tcp mss: 1440[0m
+[0;32mI (597) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (607) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (607) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (617) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (657) wifi:mode : sta (e8:06:90:63:fb:e8)[0m
+[0;32mI (657) wifi:enable tsf[0m
+[0;32mI (657) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (657) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (667) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (677) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (687) wifi:connected with Quyen, aid = 6, channel 11, BW20, bssid = bc:62:ce:e2:33:2e[0m
+[0;32mI (687) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (687) wifi:pm start, type: 1[0m
+
+[0;32mI (687) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (697) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (707) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1737) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (1737) WIFI: WiFi Connected[0m
+[0;32mI (1737) COMMUNICATION: Communication Task Started. Target: http://192.168.2.92:5000/queue[0m
+[0;32mI (1737) QUEUE_MANAGER: Queue Manager Task started with Voice Support[0m
+[0;32mI (1747) MAIN: System is ready! Handlers assigned to Core 1.[0m
+[0;32mI (1747) main_task: Returned from app_main()[0m
+[0;32mI (3657) wifi:<ba-add>idx:0 (ifx:0, bc:62:ce:e2:33:2e), tid:0, ssn:0, winSize:64[0m
+[0;33mW (11457) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (11607) RFID: RFID card detected[0m
+[0;32mI (11607) rc522: [0m
+[0;32mI (11607) rc522: ╔══════════════╗[0m
+[0;32mI (11607) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (11607) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (11617) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (11617) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (11627) rc522: ╚══════════════╝[0m
+[0;32mI (11627) rc522: [0m
+[0;32mI (11647) QUEUE_MANAGER: [RFID] New Ticket: 1[0m
+[0;32mI (12527) RFID: Card removed[0m
+[1;31mE (16657) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (16657) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (16657) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (16657) COMMUNICATION: HTTP POST failed for Kiosk_RFID: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34537) RFID: RFID card detected[0m
+[0;32mI (34537) rc522: [0m
+[0;32mI (34537) rc522: ╔══════════════╗[0m
+[0;32mI (34537) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (34537) rc522: ║     RFID     ║ UID:  3A 95 D1 06[0m
+[0;32mI (34547) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (34547) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (34557) rc522: ╚══════════════╝[0m
+[0;32mI (34557) rc522: [0m
+[0;32mI (34587) QUEUE_MANAGER: [RFID] New Ticket: 2[0m
+[1;31mE (39597) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (39597) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (39597) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (39597) COMMUNICATION: HTTP POST failed for Kiosk_RFID: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (40997) RFID: Card removed[0m
+[0;32mI (52517) QUEUE_MANAGER: [Counter 1] Serving: 1[0m
+[0;32mI (52797) QUEUE_MANAGER: [Counter 1] Serving: 2[0m
+[0;33mW (52857) QUEUE_MANAGER: Counter 1 pressed but queue is empty![0m
+[1;31mE (57527) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (57527) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (57527) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (57527) COMMUNICATION: HTTP POST failed for Counter_1: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (62547) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (62547) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (62547) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (62547) COMMUNICATION: HTTP POST failed for Counter_1: ESP_ERR_HTTP_CONNECT[0m
