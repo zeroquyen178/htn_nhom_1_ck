@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "smart_queue_system",
-    "project_version":    "caaf6aa-dirty",
+    "project_version":    "8bccc18-dirty",
     "project_path":       "D:/nam_4/htn/smart-queue-system",
     "idf_path":           "D:/Espressif/frameworks/esp-idf-v5.4.2",
     "build_dir":          "D:/nam_4/htn/smart-queue-system/build",
