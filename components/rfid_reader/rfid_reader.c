@@ -1,6 +1,5 @@
 #include "rfid_reader.h"
 #include "system_events.h"
-
 #include "esp_log.h"
 #include "pins.h"
 #include "rc522.h"
@@ -75,6 +74,7 @@ void rfid_task_init(void)
     /* Scanner config */
     rc522_config_t scanner_config = {
         .driver = driver,
+        .task_priority=6,
     };
 
     /* Create scanner */
